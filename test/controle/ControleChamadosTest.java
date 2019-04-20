@@ -48,15 +48,13 @@ public class ControleChamadosTest {
     public void testAlterarChamado_4args() {
         System.out.println("alterarChamado");
         Chamado chamado = null;
-        String status = "";
-        String causa = "";
-        String solucao = "";
+        String status = "sucesso";
+        String causa = "digitação";
+        String solucao = "verificação";
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
+        Chamado expResult = instance.alterarChamado(null, "sucesso", "digitação", "verificação");
         Chamado result = instance.alterarChamado(chamado, status, causa, solucao);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -75,11 +73,9 @@ public class ControleChamadosTest {
         String conexao = "";
         String enderecoRede = "";
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
+        Chamado expResult = instance.InserirChamadoRede(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, conexao, enderecoRede);
         Chamado result = instance.InserirChamadoRede(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, conexao, enderecoRede);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -97,11 +93,9 @@ public class ControleChamadosTest {
         String versaoSO = "";
         String bancoDeDados = "";
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
+        Chamado expResult = instance.InserirChamadoBancoDeDados(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, bancoDeDados);
         Chamado result = instance.InserirChamadoBancoDeDados(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, bancoDeDados);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -120,11 +114,9 @@ public class ControleChamadosTest {
         String operacao = "";
         double tempo = 0.0;
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
+        Chamado expResult = instance.InserirChamadoDesempenho(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, operacao, tempo);
         Chamado result = instance.InserirChamadoDesempenho(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, operacao, tempo);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -137,11 +129,9 @@ public class ControleChamadosTest {
         Chamado chamado = null;
         Tecnico tec = null;
         ControleChamados instance = new ControleChamados();
-        RegistroChamado expResult = null;
+        RegistroChamado expResult = instance.inserirRegistroChamado(assunto, chamado, tec);
         RegistroChamado result = instance.inserirRegistroChamado(assunto, chamado, tec);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -152,8 +142,6 @@ public class ControleChamadosTest {
         System.out.println("cadastrarChamado");
         ControleChamados instance = new ControleChamados();
         instance.cadastrarChamado();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -164,8 +152,6 @@ public class ControleChamadosTest {
         System.out.println("fecharTela");
         ControleChamados instance = new ControleChamados();
         instance.fecharTela();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -174,13 +160,10 @@ public class ControleChamadosTest {
     @Test
     public void testVoltaChamadoCodigo() {
         System.out.println("voltaChamadoCodigo");
-        Integer codigo = null;
+        Integer codigo = 201;
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
         Chamado result = instance.voltaChamadoCodigo(codigo);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(201, result);
     }
 
     /**
@@ -192,8 +175,7 @@ public class ControleChamadosTest {
         Chamado c = null;
         ControleChamados instance = new ControleChamados();
         instance.setChamadoAlterado(c);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(c);
     }
 
     /**
@@ -203,11 +185,8 @@ public class ControleChamadosTest {
     public void testGetChamadoAlterado() {
         System.out.println("getChamadoAlterado");
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
         Chamado result = instance.getChamadoAlterado();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
     }
 
     /**
@@ -218,11 +197,8 @@ public class ControleChamadosTest {
         System.out.println("emitirRelatorios");
         int tipoproblema = 0;
         ControleChamados instance = new ControleChamados();
-        String expResult = "";
         String result = instance.emitirRelatorios(tipoproblema);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
     }
 
     /**
@@ -231,13 +207,10 @@ public class ControleChamadosTest {
     @Test
     public void testBuscaPeloCodigo() {
         System.out.println("buscaPeloCodigo");
-        int codigoChamado = 0;
+        int codigoChamado = 201;
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = null;
         Chamado result = instance.buscaPeloCodigo(codigoChamado);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(201, result);
     }
 
     /**
@@ -248,11 +221,9 @@ public class ControleChamadosTest {
         System.out.println("retornaDetalhesChamado");
         Chamado c = null;
         ControleChamados instance = new ControleChamados();
-        String expResult = "";
         String result = instance.retornaDetalhesChamado(c);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
+        
     }
 
     /**
@@ -263,8 +234,6 @@ public class ControleChamadosTest {
         System.out.println("alterarChamado");
         ControleChamados instance = new ControleChamados();
         instance.alterarChamado();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -275,8 +244,6 @@ public class ControleChamadosTest {
         System.out.println("abrirRelatorio");
         ControleChamados instance = new ControleChamados();
         instance.abrirRelatorio();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -287,8 +254,6 @@ public class ControleChamadosTest {
         System.out.println("fecharTelaAlteracao");
         ControleChamados instance = new ControleChamados();
         instance.fecharTelaAlteracao();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -302,8 +267,6 @@ public class ControleChamadosTest {
         int expResult = 0;
         int result = instance.validarQtdChamados(cliente);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

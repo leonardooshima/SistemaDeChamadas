@@ -67,7 +67,7 @@ public class ControladorPrincipalTest {
         ControleEmpresas ctrEmpresa = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrEmpresa(ctrEmpresa);
-        assertNull(ctrEmpresa);
+        assertNotNull(ctrEmpresa);
     }
 
     /**
@@ -77,11 +77,8 @@ public class ControladorPrincipalTest {
     public void testGetCtrChamados() {
         System.out.println("getCtrChamados");
         ControladorPrincipal instance = new ControladorPrincipal();
-        ControleChamados expResult = null;
         ControleChamados result = instance.getCtrChamados();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNull(result);
     }
 
     /**
@@ -93,8 +90,7 @@ public class ControladorPrincipalTest {
         ControleChamados ctrChamados = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrChamados(ctrChamados);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(ctrChamados);
     }
 
     /**
@@ -104,11 +100,8 @@ public class ControladorPrincipalTest {
     public void testGetCtrClientes() {
         System.out.println("getCtrClientes");
         ControladorPrincipal instance = new ControladorPrincipal();
-        ControleClientes expResult = null;
         ControleClientes result = instance.getCtrClientes();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNull(result);
     }
 
     /**
@@ -120,8 +113,7 @@ public class ControladorPrincipalTest {
         ControleClientes ctrClientes = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrClientes(ctrClientes);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(ctrClientes);
     }
 
     /**
@@ -131,11 +123,8 @@ public class ControladorPrincipalTest {
     public void testGetCtrTecnicos() {
         System.out.println("getCtrTecnicos");
         ControladorPrincipal instance = new ControladorPrincipal();
-        ControleTecnicos expResult = null;
         ControleTecnicos result = instance.getCtrTecnicos();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNull(result);
     }
 
     /**
@@ -147,8 +136,7 @@ public class ControladorPrincipalTest {
         ControleTecnicos ctrTecnicos = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrTecnicos(ctrTecnicos);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(ctrTecnicos);
     }
     
 }
