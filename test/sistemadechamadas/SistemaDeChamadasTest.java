@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entidade;
+package sistemadechamadas;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author Juliana
  */
-public class TipoProblemaTest {
+public class SistemaDeChamadasTest {
     
-    public TipoProblemaTest() {
+    public SistemaDeChamadasTest() {
     }
     
     @BeforeClass
@@ -38,28 +38,13 @@ public class TipoProblemaTest {
     }
 
     /**
-     * Test of values method, of class TipoProblema.
+     * Test of main method, of class SistemaDeChamadas.
      */
     @Test
-    public void testValues() {
-        System.out.println("values");
-        TipoProblema[] expResult = null;
-        TipoProblema[] result = TipoProblema.values();
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of valueOf method, of class TipoProblema.
-     */
-    @Test
-    public void testValueOf() {
-        System.out.println("valueOf");
-        String name = "";
-        TipoProblema expResult = null;
-        TipoProblema result = TipoProblema.valueOf(name);
-        assertEquals(expResult, result);
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        SistemaDeChamadas.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

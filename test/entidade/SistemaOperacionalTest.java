@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 31718671
+ * @author Juliana
  */
 public class SistemaOperacionalTest {
     
@@ -35,6 +35,33 @@ public class SistemaOperacionalTest {
     
     @After
     public void tearDown() {
+    }
+
+    /**
+     * Test of values method, of class SistemaOperacional.
+     */
+    @Test
+    public void testValues() {
+        System.out.println("values");
+        SistemaOperacional[] expResult = null;
+        SistemaOperacional[] result = SistemaOperacional.values();
+        assertArrayEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of valueOf method, of class SistemaOperacional.
+     */
+    @Test
+    public void testValueOf() {
+        System.out.println("valueOf");
+        String name = "";
+        SistemaOperacional expResult = null;
+        SistemaOperacional result = SistemaOperacional.valueOf(name);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

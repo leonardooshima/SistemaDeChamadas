@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 31718671
+ * @author Juliana
  */
 public class BancoDeDadosTest {
     
@@ -35,6 +35,33 @@ public class BancoDeDadosTest {
     
     @After
     public void tearDown() {
+    }
+
+    /**
+     * Test of values method, of class BancoDeDados.
+     */
+    @Test
+    public void testValues() {
+        System.out.println("values");
+        BancoDeDados[] expResult = null;
+        BancoDeDados[] result = BancoDeDados.values();
+        assertArrayEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of valueOf method, of class BancoDeDados.
+     */
+    @Test
+    public void testValueOf() {
+        System.out.println("valueOf");
+        String name = "";
+        BancoDeDados expResult = null;
+        BancoDeDados result = BancoDeDados.valueOf(name);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

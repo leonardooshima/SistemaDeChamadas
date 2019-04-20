@@ -14,7 +14,7 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author 31718671
+ * @author Juliana
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({Persistencia.ChamadoDAOTest.class, Persistencia.TecnicoDAOTest.class, Persistencia.ClienteDAOTest.class, Persistencia.EmpresaDAOTest.class})

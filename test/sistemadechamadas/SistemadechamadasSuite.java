@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entidade;
+package sistemadechamadas;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -17,8 +17,8 @@ import org.junit.runners.Suite;
  * @author Juliana
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({entidade.StatusTest.class, entidade.TipoProblemaTest.class, entidade.EmpresaTest.class, entidade.ChamadoTest.class, entidade.ClienteEmpresaTest.class, entidade.SistemaOperacionalTest.class, entidade.TecnicoTest.class, entidade.RegistroChamadoTest.class, entidade.BancoDeDadosTest.class, entidade.TipoConexaoTest.class, entidade.PessoaTest.class})
-public class EntidadeSuite {
+@Suite.SuiteClasses({sistemadechamadas.SistemaDeChamadasTest.class})
+public class SistemadechamadasSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {

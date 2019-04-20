@@ -13,10 +13,10 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author 31718671
+ * @author Juliana
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({controle.ControleSuite.class, entidade.EntidadeSuite.class, Persistencia.PersistenciaSuite.class})
+@Suite.SuiteClasses({Persistencia.PersistenciaSuite.class, entidade.EntidadeSuite.class, sistemadechamadas.SistemadechamadasSuite.class, controle.ControleSuite.class})
 public class RootSuite {
 
     @BeforeClass

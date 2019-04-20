@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 31718671
+ * @author Juliana
  */
 public class IControladorTest {
     
@@ -35,6 +35,29 @@ public class IControladorTest {
     
     @After
     public void tearDown() {
+    }
+
+    /**
+     * Test of inserir method, of class IControlador.
+     */
+    @Test
+    public void testInserir() {
+        System.out.println("inserir");
+        long n = 0L;
+        String nome = "";
+        IControlador instance = new IControladorImpl();
+        Object expResult = null;
+        Object result = instance.inserir(n, nome);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    public class IControladorImpl implements IControlador {
+
+        public Object inserir(long n, String nome) {
+            return null;
+        }
     }
     
 }
