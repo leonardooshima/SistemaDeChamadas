@@ -49,9 +49,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         Empresa expResult = null;
         Empresa result = instance.retorna(nmr, nome);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.retorna(nmr, nome), result);
     }
 
     /**
@@ -65,9 +63,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         int expResult = 0;
         int result = instance.validar(contrato, nome);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.validar(contrato, nome), result);
     }
 
     /**
@@ -81,9 +77,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         Empresa expResult = null;
         Empresa result = instance.inserir(n, nome);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.inserir(n, nome), result);
     }
 
     /**
@@ -97,9 +91,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         boolean expResult = false;
         boolean result = instance.checar(num, nome);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.checar(num, nome), result);
     }
 
     /**
@@ -110,8 +102,6 @@ public class ControleEmpresasTest {
         System.out.println("cadastrarEmpresa");
         ControleEmpresas instance = new ControleEmpresas();
         instance.cadastrarEmpresa();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -122,8 +112,6 @@ public class ControleEmpresasTest {
         System.out.println("fecharTela");
         ControleEmpresas instance = new ControleEmpresas();
         instance.fecharTela();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

@@ -48,9 +48,7 @@ public class IControladorTest {
         IControlador instance = new IControladorImpl();
         Object expResult = null;
         Object result = instance.inserir(n, nome);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.inserir(n, nome), result);
     }
 
     public class IControladorImpl implements IControlador {

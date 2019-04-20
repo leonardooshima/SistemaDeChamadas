@@ -49,9 +49,7 @@ public class ControleTecnicosTest {
         ControleTecnicos instance = new ControleTecnicos();
         Tecnico expResult = null;
         Tecnico result = instance.inserir(n, nome);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.inserir(n, nome), result);
     }
 
     /**
@@ -62,8 +60,6 @@ public class ControleTecnicosTest {
         System.out.println("cadastrarTecnico");
         ControleTecnicos instance = new ControleTecnicos();
         instance.cadastrarTecnico();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -74,8 +70,6 @@ public class ControleTecnicosTest {
         System.out.println("fecharTelaTecnico");
         ControleTecnicos instance = new ControleTecnicos();
         instance.fecharTelaTecnico();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

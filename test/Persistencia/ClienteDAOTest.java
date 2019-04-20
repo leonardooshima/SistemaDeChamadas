@@ -45,13 +45,11 @@ public class ClienteDAOTest {
     @Test
     public void testValidarCPF() {
         System.out.println("validarCPF");
-        long cpf = 0L;
+        long cpf = 440123456;
         ClienteDAO instance = new ClienteDAO();
         boolean expResult = false;
         boolean result = instance.validarCPF(cpf);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -61,11 +59,8 @@ public class ClienteDAOTest {
     public void testGerarCodigo() {
         System.out.println("gerarCodigo");
         ClienteDAO instance = new ClienteDAO();
-        int expResult = 0;
         int result = instance.gerarCodigo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNull(result);
     }
 
     /**
@@ -75,11 +70,8 @@ public class ClienteDAOTest {
     public void testVoltaCashCliente() {
         System.out.println("voltaCashCliente");
         ClienteDAO instance = new ClienteDAO();
-        HashMap<Long, ClienteEmpresa> expResult = null;
         HashMap<Long, ClienteEmpresa> result = instance.voltaCashCliente();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNull(result);
     }
 
     /**
@@ -91,8 +83,6 @@ public class ClienteDAOTest {
         ClienteEmpresa cliente = null;
         ClienteDAO instance = new ClienteDAO();
         instance.put(cliente);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -103,11 +93,8 @@ public class ClienteDAOTest {
         System.out.println("get");
         Long codigoCliente = null;
         ClienteDAO instance = new ClienteDAO();
-        ClienteEmpresa expResult = null;
         ClienteEmpresa result = instance.get(codigoCliente);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
     }
 
     /**
@@ -118,8 +105,6 @@ public class ClienteDAOTest {
         System.out.println("persit");
         ClienteDAO instance = new ClienteDAO();
         instance.persit();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
