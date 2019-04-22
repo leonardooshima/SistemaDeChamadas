@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ClienteEmpresaTest {
     
@@ -44,8 +44,9 @@ public class ClienteEmpresaTest {
     public void testGetCodigo() {
         System.out.println("getCodigo");
         ClienteEmpresa instance = null;
+        Integer expResult = null;
         Integer result = instance.getCodigo();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -80,8 +81,6 @@ public class ClienteEmpresaTest {
         long cpf = 0L;
         ClienteEmpresa instance = null;
         instance.setCpf(cpf);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -94,8 +93,6 @@ public class ClienteEmpresaTest {
         Empresa expResult = null;
         Empresa result = instance.getEmpresa();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -108,8 +105,6 @@ public class ClienteEmpresaTest {
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

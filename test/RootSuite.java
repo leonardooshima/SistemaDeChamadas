@@ -4,19 +4,23 @@
  * and open the template in the editor.
  */
 
+import Persistencia.PersistenciaSuite;
+import controle.ControleSuite;
+import entidade.EntidadeSuite;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import sistemadechamadas.SistemadechamadasSuite;
 
 /**
  *
  * @author Juliana
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({Persistencia.PersistenciaSuite.class, entidade.EntidadeSuite.class, sistemadechamadas.SistemadechamadasSuite.class, controle.ControleSuite.class})
+@Suite.SuiteClasses({SistemadechamadasSuite.class, EntidadeSuite.class, PersistenciaSuite.class, ControleSuite.class})
 public class RootSuite {
 
     @BeforeClass

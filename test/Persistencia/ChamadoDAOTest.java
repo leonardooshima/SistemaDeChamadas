@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ChamadoDAOTest {
     
@@ -47,8 +47,9 @@ public class ChamadoDAOTest {
     public void testGerarCodigo() {
         System.out.println("gerarCodigo");
         ChamadoDAO instance = new ChamadoDAO();
+        int expResult = 0;
         int result = instance.gerarCodigo();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -58,8 +59,9 @@ public class ChamadoDAOTest {
     public void testGerarCodigoRegistroChamado() {
         System.out.println("gerarCodigoRegistroChamado");
         ChamadoDAO instance = new ChamadoDAO();
+        int expResult = 0;
         int result = instance.gerarCodigoRegistroChamado();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -90,10 +92,11 @@ public class ChamadoDAOTest {
     @Test
     public void testGet() {
         System.out.println("get");
-        Integer codigoChamado = 201;
+        Integer codigoChamado = null;
         ChamadoDAO instance = new ChamadoDAO();
+        Chamado expResult = null;
         Chamado result = instance.get(codigoChamado);
-        assertEquals(201, result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -113,8 +116,9 @@ public class ChamadoDAOTest {
     public void testGetChamados() {
         System.out.println("getChamados");
         ChamadoDAO instance = new ChamadoDAO();
+        Collection<Chamado> expResult = null;
         Collection<Chamado> result = instance.getChamados();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -124,7 +128,9 @@ public class ChamadoDAOTest {
     public void testGetRegistros() {
         System.out.println("getRegistros");
         ChamadoDAO instance = new ChamadoDAO();
+        Collection<RegistroChamado> expResult = null;
         Collection<RegistroChamado> result = instance.getRegistros();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
+    
 }

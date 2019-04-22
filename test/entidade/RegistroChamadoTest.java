@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class RegistroChamadoTest {
     
@@ -47,8 +47,6 @@ public class RegistroChamadoTest {
         Integer expResult = null;
         Integer result = instance.getCodigo();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -60,8 +58,6 @@ public class RegistroChamadoTest {
         Integer codigo = null;
         RegistroChamado instance = null;
         instance.setCodigo(codigo);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -73,8 +69,6 @@ public class RegistroChamadoTest {
         Chamado chamado = null;
         RegistroChamado instance = null;
         instance.setChamado(chamado);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -87,8 +81,6 @@ public class RegistroChamadoTest {
         Chamado expResult = null;
         Chamado result = instance.getChamado();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -101,8 +93,6 @@ public class RegistroChamadoTest {
         String expResult = "";
         String result = instance.getHora();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -114,8 +104,6 @@ public class RegistroChamadoTest {
         String hora = "";
         RegistroChamado instance = null;
         instance.setHora(hora);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -128,8 +116,6 @@ public class RegistroChamadoTest {
         String expResult = "";
         String result = instance.getData();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -141,8 +127,6 @@ public class RegistroChamadoTest {
         String data = "";
         RegistroChamado instance = null;
         instance.setData(data);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -155,8 +139,6 @@ public class RegistroChamadoTest {
         String expResult = "";
         String result = instance.getAssunto();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -168,8 +150,6 @@ public class RegistroChamadoTest {
         String assunto = "";
         RegistroChamado instance = null;
         instance.setAssunto(assunto);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -182,8 +162,6 @@ public class RegistroChamadoTest {
         Tecnico expResult = null;
         Tecnico result = instance.getTecnico();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -195,8 +173,6 @@ public class RegistroChamadoTest {
         Tecnico tecnico = null;
         RegistroChamado instance = null;
         instance.setTecnico(tecnico);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ClienteDAOTest {
     
@@ -45,7 +45,7 @@ public class ClienteDAOTest {
     @Test
     public void testValidarCPF() {
         System.out.println("validarCPF");
-        long cpf = 440123456;
+        long cpf = 0L;
         ClienteDAO instance = new ClienteDAO();
         boolean expResult = false;
         boolean result = instance.validarCPF(cpf);
@@ -59,8 +59,9 @@ public class ClienteDAOTest {
     public void testGerarCodigo() {
         System.out.println("gerarCodigo");
         ClienteDAO instance = new ClienteDAO();
+        int expResult = 0;
         int result = instance.gerarCodigo();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -70,8 +71,9 @@ public class ClienteDAOTest {
     public void testVoltaCashCliente() {
         System.out.println("voltaCashCliente");
         ClienteDAO instance = new ClienteDAO();
+        HashMap<Long, ClienteEmpresa> expResult = null;
         HashMap<Long, ClienteEmpresa> result = instance.voltaCashCliente();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -93,8 +95,9 @@ public class ClienteDAOTest {
         System.out.println("get");
         Long codigoCliente = null;
         ClienteDAO instance = new ClienteDAO();
+        ClienteEmpresa expResult = null;
         ClienteEmpresa result = instance.get(codigoCliente);
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**

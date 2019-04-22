@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ControladorPrincipalTest {
     
@@ -54,8 +54,9 @@ public class ControladorPrincipalTest {
     public void testGetCtrEmpresa() {
         System.out.println("getCtrEmpresa");
         ControladorPrincipal instance = new ControladorPrincipal();
+        ControleEmpresas expResult = null;
         ControleEmpresas result = instance.getCtrEmpresa();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -67,7 +68,6 @@ public class ControladorPrincipalTest {
         ControleEmpresas ctrEmpresa = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrEmpresa(ctrEmpresa);
-        assertNotNull(ctrEmpresa);
     }
 
     /**
@@ -77,8 +77,9 @@ public class ControladorPrincipalTest {
     public void testGetCtrChamados() {
         System.out.println("getCtrChamados");
         ControladorPrincipal instance = new ControladorPrincipal();
+        ControleChamados expResult = null;
         ControleChamados result = instance.getCtrChamados();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -90,7 +91,6 @@ public class ControladorPrincipalTest {
         ControleChamados ctrChamados = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrChamados(ctrChamados);
-        assertNotNull(ctrChamados);
     }
 
     /**
@@ -100,8 +100,9 @@ public class ControladorPrincipalTest {
     public void testGetCtrClientes() {
         System.out.println("getCtrClientes");
         ControladorPrincipal instance = new ControladorPrincipal();
+        ControleClientes expResult = null;
         ControleClientes result = instance.getCtrClientes();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -113,7 +114,6 @@ public class ControladorPrincipalTest {
         ControleClientes ctrClientes = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrClientes(ctrClientes);
-        assertNotNull(ctrClientes);
     }
 
     /**
@@ -123,8 +123,9 @@ public class ControladorPrincipalTest {
     public void testGetCtrTecnicos() {
         System.out.println("getCtrTecnicos");
         ControladorPrincipal instance = new ControladorPrincipal();
+        ControleTecnicos expResult = null;
         ControleTecnicos result = instance.getCtrTecnicos();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -136,7 +137,6 @@ public class ControladorPrincipalTest {
         ControleTecnicos ctrTecnicos = null;
         ControladorPrincipal instance = new ControladorPrincipal();
         instance.setCtrTecnicos(ctrTecnicos);
-        assertNotNull(ctrTecnicos);
     }
     
 }

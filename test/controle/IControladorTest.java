@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class IControladorTest {
     
@@ -48,7 +48,7 @@ public class IControladorTest {
         IControlador instance = new IControladorImpl();
         Object expResult = null;
         Object result = instance.inserir(n, nome);
-        assertEquals(instance.inserir(n, nome), result);
+        assertEquals(expResult, result);
     }
 
     public class IControladorImpl implements IControlador {

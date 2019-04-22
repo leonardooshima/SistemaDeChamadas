@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ChamadoTest {
     
@@ -44,9 +44,9 @@ public class ChamadoTest {
     public void testGetTecnico() {
         System.out.println("getTecnico");
         Chamado instance = null;
+        Tecnico expResult = null;
         Tecnico result = instance.getTecnico();
-        assertNull(result);
-        
+        assertEquals(expResult, result);
     }
 
     /**
@@ -56,8 +56,9 @@ public class ChamadoTest {
     public void testGetCodigo() {
         System.out.println("getCodigo");
         Chamado instance = null;
+        int expResult = 0;
         int result = instance.getCodigo();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -89,8 +90,9 @@ public class ChamadoTest {
     public void testGetCliente() {
         System.out.println("getCliente");
         Chamado instance = null;
+        ClienteEmpresa expResult = null;
         ClienteEmpresa result = instance.getCliente();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -111,8 +113,9 @@ public class ChamadoTest {
     public void testGetStatus() {
         System.out.println("getStatus");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getStatus();
-        assertEquals("Iniciado", result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -133,7 +136,7 @@ public class ChamadoTest {
     public void testGetTipoProblema() {
         System.out.println("getTipoProblema");
         Chamado instance = null;
-        String expResult = "problema de rede";
+        String expResult = "";
         String result = instance.getTipoProblema();
         assertEquals(expResult, result);
     }
@@ -156,8 +159,9 @@ public class ChamadoTest {
     public void testGetData() {
         System.out.println("getData");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getData();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -178,8 +182,9 @@ public class ChamadoTest {
     public void testGetHora() {
         System.out.println("getHora");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getHora();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -200,8 +205,9 @@ public class ChamadoTest {
     public void testGetTitulo() {
         System.out.println("getTitulo");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getTitulo();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -222,8 +228,9 @@ public class ChamadoTest {
     public void testGetDescricao() {
         System.out.println("getDescricao");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getDescricao();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -336,8 +343,9 @@ public class ChamadoTest {
     public void testGetCausaProblema() {
         System.out.println("getCausaProblema");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getCausaProblema();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -381,8 +389,9 @@ public class ChamadoTest {
     public void testGetTipoConexao() {
         System.out.println("getTipoConexao");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getTipoConexao();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -403,8 +412,9 @@ public class ChamadoTest {
     public void testGetEnderecoRede() {
         System.out.println("getEnderecoRede");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getEnderecoRede();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -425,8 +435,9 @@ public class ChamadoTest {
     public void testGetOperacao() {
         System.out.println("getOperacao");
         Chamado instance = null;
+        String expResult = "";
         String result = instance.getOperacao();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**

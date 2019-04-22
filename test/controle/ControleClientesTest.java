@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ControleClientesTest {
     
@@ -47,8 +47,9 @@ public class ControleClientesTest {
     public void testGetClienteDAO() {
         System.out.println("getClienteDAO");
         ControleClientes instance = new ControleClientes();
+        ClienteDAO expResult = null;
         ClienteDAO result = instance.getClienteDAO();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -72,8 +73,9 @@ public class ControleClientesTest {
         String nome = "";
         long telefone = 0L;
         ControleClientes instance = new ControleClientes();
+        ClienteEmpresa expResult = null;
         ClienteEmpresa result = instance.incluiNovoCliente(empresa, cpf, nome, telefone);
-        assertEquals(instance.incluiNovoCliente(empresa, cpf, nome, telefone), result);
+        assertEquals(expResult, result);
     }
 
     /**

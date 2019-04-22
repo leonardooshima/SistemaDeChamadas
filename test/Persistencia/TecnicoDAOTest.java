@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class TecnicoDAOTest {
     
@@ -46,8 +46,9 @@ public class TecnicoDAOTest {
     public void testGerarCodigo() {
         System.out.println("gerarCodigo");
         TecnicoDAO instance = new TecnicoDAO();
+        int expResult = 0;
         int result = instance.gerarCodigo();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -57,8 +58,9 @@ public class TecnicoDAOTest {
     public void testVoltaCashTecnico() {
         System.out.println("voltaCashTecnico");
         TecnicoDAO instance = new TecnicoDAO();
+        HashMap<Integer, Tecnico> expResult = null;
         HashMap<Integer, Tecnico> result = instance.voltaCashTecnico();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -78,10 +80,11 @@ public class TecnicoDAOTest {
     @Test
     public void testGet() {
         System.out.println("get");
-        Integer codigo = 201;
+        Integer codigo = null;
         TecnicoDAO instance = new TecnicoDAO();
+        Tecnico expResult = null;
         Tecnico result = instance.get(codigo);
-        assertEquals(201, result);
+        assertEquals(expResult, result);
     }
 
     /**

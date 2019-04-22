@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class BancoDeDadosTest {
     
@@ -55,8 +55,9 @@ public class BancoDeDadosTest {
     public void testValueOf() {
         System.out.println("valueOf");
         String name = "";
+        BancoDeDados expResult = null;
         BancoDeDados result = BancoDeDados.valueOf(name);
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
     
 }

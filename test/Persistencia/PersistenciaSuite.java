@@ -14,10 +14,10 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({Persistencia.ChamadoDAOTest.class, Persistencia.TecnicoDAOTest.class, Persistencia.ClienteDAOTest.class, Persistencia.EmpresaDAOTest.class})
+@Suite.SuiteClasses({Persistencia.EmpresaDAOTest.class, Persistencia.ChamadoDAOTest.class, Persistencia.ClienteDAOTest.class, Persistencia.TecnicoDAOTest.class})
 public class PersistenciaSuite {
 
     @BeforeClass

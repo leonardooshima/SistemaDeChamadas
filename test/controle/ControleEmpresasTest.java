@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ControleEmpresasTest {
     
@@ -49,7 +49,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         Empresa expResult = null;
         Empresa result = instance.retorna(nmr, nome);
-        assertEquals(instance.retorna(nmr, nome), result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -63,7 +63,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         int expResult = 0;
         int result = instance.validar(contrato, nome);
-        assertEquals(instance.validar(contrato, nome), result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -77,7 +77,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         Empresa expResult = null;
         Empresa result = instance.inserir(n, nome);
-        assertEquals(instance.inserir(n, nome), result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -91,7 +91,7 @@ public class ControleEmpresasTest {
         ControleEmpresas instance = new ControleEmpresas();
         boolean expResult = false;
         boolean result = instance.checar(num, nome);
-        assertEquals(instance.checar(num, nome), result);
+        assertEquals(expResult, result);
     }
 
     /**

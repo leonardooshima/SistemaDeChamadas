@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class TipoProblemaTest {
     
@@ -46,8 +46,6 @@ public class TipoProblemaTest {
         TipoProblema[] expResult = null;
         TipoProblema[] result = TipoProblema.values();
         assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -60,8 +58,6 @@ public class TipoProblemaTest {
         TipoProblema expResult = null;
         TipoProblema result = TipoProblema.valueOf(name);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

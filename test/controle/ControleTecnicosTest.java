@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ControleTecnicosTest {
     
@@ -49,7 +49,7 @@ public class ControleTecnicosTest {
         ControleTecnicos instance = new ControleTecnicos();
         Tecnico expResult = null;
         Tecnico result = instance.inserir(n, nome);
-        assertEquals(instance.inserir(n, nome), result);
+        assertEquals(expResult, result);
     }
 
     /**

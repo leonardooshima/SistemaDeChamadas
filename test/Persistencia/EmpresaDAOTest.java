@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class EmpresaDAOTest {
     
@@ -68,8 +68,9 @@ public class EmpresaDAOTest {
     public void testGetEmpresas() {
         System.out.println("getEmpresas");
         EmpresaDAO instance = new EmpresaDAO();
+        Collection<Empresa> expResult = null;
         Collection<Empresa> result = instance.getEmpresas();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -79,8 +80,9 @@ public class EmpresaDAOTest {
     public void testVoltaEmpresa() {
         System.out.println("voltaEmpresa");
         EmpresaDAO instance = new EmpresaDAO();
+        HashMap<Long, Empresa> expResult = null;
         HashMap<Long, Empresa> result = instance.voltaEmpresa();
-        assertNull(result);
+        assertEquals(expResult, result);
     }
     
 }

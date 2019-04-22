@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class ControleChamadosTest {
     
@@ -48,11 +48,11 @@ public class ControleChamadosTest {
     public void testAlterarChamado_4args() {
         System.out.println("alterarChamado");
         Chamado chamado = null;
-        String status = "sucesso";
-        String causa = "digitação";
-        String solucao = "verificação";
+        String status = "";
+        String causa = "";
+        String solucao = "";
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = instance.alterarChamado(null, "sucesso", "digitação", "verificação");
+        Chamado expResult = null;
         Chamado result = instance.alterarChamado(chamado, status, causa, solucao);
         assertEquals(expResult, result);
     }
@@ -73,7 +73,7 @@ public class ControleChamadosTest {
         String conexao = "";
         String enderecoRede = "";
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = instance.InserirChamadoRede(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, conexao, enderecoRede);
+        Chamado expResult = null;
         Chamado result = instance.InserirChamadoRede(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, conexao, enderecoRede);
         assertEquals(expResult, result);
     }
@@ -93,7 +93,7 @@ public class ControleChamadosTest {
         String versaoSO = "";
         String bancoDeDados = "";
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = instance.InserirChamadoBancoDeDados(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, bancoDeDados);
+        Chamado expResult = null;
         Chamado result = instance.InserirChamadoBancoDeDados(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, bancoDeDados);
         assertEquals(expResult, result);
     }
@@ -114,7 +114,7 @@ public class ControleChamadosTest {
         String operacao = "";
         double tempo = 0.0;
         ControleChamados instance = new ControleChamados();
-        Chamado expResult = instance.InserirChamadoDesempenho(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, operacao, tempo);
+        Chamado expResult = null;
         Chamado result = instance.InserirChamadoDesempenho(titulo, descricao, prioridade, tecnico, cliente, so, versaoSO, operacao, tempo);
         assertEquals(expResult, result);
     }
@@ -129,7 +129,7 @@ public class ControleChamadosTest {
         Chamado chamado = null;
         Tecnico tec = null;
         ControleChamados instance = new ControleChamados();
-        RegistroChamado expResult = instance.inserirRegistroChamado(assunto, chamado, tec);
+        RegistroChamado expResult = null;
         RegistroChamado result = instance.inserirRegistroChamado(assunto, chamado, tec);
         assertEquals(expResult, result);
     }
@@ -160,10 +160,11 @@ public class ControleChamadosTest {
     @Test
     public void testVoltaChamadoCodigo() {
         System.out.println("voltaChamadoCodigo");
-        Integer codigo = 201;
+        Integer codigo = null;
         ControleChamados instance = new ControleChamados();
+        Chamado expResult = null;
         Chamado result = instance.voltaChamadoCodigo(codigo);
-        assertEquals(201, result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -175,7 +176,6 @@ public class ControleChamadosTest {
         Chamado c = null;
         ControleChamados instance = new ControleChamados();
         instance.setChamadoAlterado(c);
-        assertNotNull(c);
     }
 
     /**
@@ -185,8 +185,9 @@ public class ControleChamadosTest {
     public void testGetChamadoAlterado() {
         System.out.println("getChamadoAlterado");
         ControleChamados instance = new ControleChamados();
+        Chamado expResult = null;
         Chamado result = instance.getChamadoAlterado();
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -197,8 +198,9 @@ public class ControleChamadosTest {
         System.out.println("emitirRelatorios");
         int tipoproblema = 0;
         ControleChamados instance = new ControleChamados();
+        String expResult = "";
         String result = instance.emitirRelatorios(tipoproblema);
-        assertNotNull(result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -207,10 +209,11 @@ public class ControleChamadosTest {
     @Test
     public void testBuscaPeloCodigo() {
         System.out.println("buscaPeloCodigo");
-        int codigoChamado = 201;
+        int codigoChamado = 0;
         ControleChamados instance = new ControleChamados();
+        Chamado expResult = null;
         Chamado result = instance.buscaPeloCodigo(codigoChamado);
-        assertEquals(201, result);
+        assertEquals(expResult, result);
     }
 
     /**
@@ -221,9 +224,9 @@ public class ControleChamadosTest {
         System.out.println("retornaDetalhesChamado");
         Chamado c = null;
         ControleChamados instance = new ControleChamados();
+        String expResult = "";
         String result = instance.retornaDetalhesChamado(c);
-        assertNotNull(result);
-        
+        assertEquals(expResult, result);
     }
 
     /**

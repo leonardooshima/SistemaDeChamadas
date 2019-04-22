@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 public class SistemaDeChamadasTest {
     
@@ -45,8 +45,6 @@ public class SistemaDeChamadasTest {
         System.out.println("main");
         String[] args = null;
         SistemaDeChamadas.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

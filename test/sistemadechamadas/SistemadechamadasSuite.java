@@ -14,7 +14,7 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author Juliana
+ * @author leona
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({sistemadechamadas.SistemaDeChamadasTest.class})
