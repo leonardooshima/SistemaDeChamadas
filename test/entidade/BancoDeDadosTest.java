@@ -46,8 +46,6 @@ public class BancoDeDadosTest {
         BancoDeDados[] expResult = null;
         BancoDeDados[] result = BancoDeDados.values();
         assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,11 +55,8 @@ public class BancoDeDadosTest {
     public void testValueOf() {
         System.out.println("valueOf");
         String name = "";
-        BancoDeDados expResult = null;
         BancoDeDados result = BancoDeDados.valueOf(name);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
     }
     
 }

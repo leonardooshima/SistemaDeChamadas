@@ -44,11 +44,8 @@ public class ClienteEmpresaTest {
     public void testGetCodigo() {
         System.out.println("getCodigo");
         ClienteEmpresa instance = null;
-        Integer expResult = null;
         Integer result = instance.getCodigo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
     }
 
     /**
@@ -60,8 +57,6 @@ public class ClienteEmpresaTest {
         Integer codigo = null;
         ClienteEmpresa instance = null;
         instance.setCodigo(codigo);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -74,8 +69,6 @@ public class ClienteEmpresaTest {
         long expResult = 0L;
         long result = instance.getCpf();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
