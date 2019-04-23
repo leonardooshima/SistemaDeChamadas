@@ -49,6 +49,7 @@ public class ClienteDAOTest {
         ClienteDAO instance = new ClienteDAO();
         boolean expResult = false;
         boolean result = instance.validarCPF(cpf);
+        System.out.println(result);
         assertEquals(expResult, result);
     }
 
@@ -74,40 +75,6 @@ public class ClienteDAOTest {
         HashMap<Long, ClienteEmpresa> expResult = null;
         HashMap<Long, ClienteEmpresa> result = instance.voltaCashCliente();
         assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of put method, of class ClienteDAO.
-     */
-    @Test
-    public void testPut() {
-        System.out.println("put");
-        ClienteEmpresa cliente = null;
-        ClienteDAO instance = new ClienteDAO();
-        instance.put(cliente);
-    }
-
-    /**
-     * Test of get method, of class ClienteDAO.
-     */
-    @Test
-    public void testGet() {
-        System.out.println("get");
-        Long codigoCliente = null;
-        ClienteDAO instance = new ClienteDAO();
-        ClienteEmpresa expResult = null;
-        ClienteEmpresa result = instance.get(codigoCliente);
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of persit method, of class ClienteDAO.
-     */
-    @Test
-    public void testPersit() {
-        System.out.println("persit");
-        ClienteDAO instance = new ClienteDAO();
-        instance.persit();
     }
     
 }

@@ -49,6 +49,7 @@ public class ChamadoDAOTest {
         ChamadoDAO instance = new ChamadoDAO();
         int expResult = 0;
         int result = instance.gerarCodigo();
+        System.out.println(result);
         assertEquals(expResult, result);
     }
 
@@ -61,75 +62,7 @@ public class ChamadoDAOTest {
         ChamadoDAO instance = new ChamadoDAO();
         int expResult = 0;
         int result = instance.gerarCodigoRegistroChamado();
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of put method, of class ChamadoDAO.
-     */
-    @Test
-    public void testPut() {
-        System.out.println("put");
-        Chamado chamado = null;
-        ChamadoDAO instance = new ChamadoDAO();
-        instance.put(chamado);
-    }
-
-    /**
-     * Test of putRegistro method, of class ChamadoDAO.
-     */
-    @Test
-    public void testPutRegistro() {
-        System.out.println("putRegistro");
-        RegistroChamado registroChamado = null;
-        ChamadoDAO instance = new ChamadoDAO();
-        instance.putRegistro(registroChamado);
-    }
-
-    /**
-     * Test of get method, of class ChamadoDAO.
-     */
-    @Test
-    public void testGet() {
-        System.out.println("get");
-        Integer codigoChamado = null;
-        ChamadoDAO instance = new ChamadoDAO();
-        Chamado expResult = null;
-        Chamado result = instance.get(codigoChamado);
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of persit method, of class ChamadoDAO.
-     */
-    @Test
-    public void testPersit() {
-        System.out.println("persit");
-        ChamadoDAO instance = new ChamadoDAO();
-        instance.persit();
-    }
-
-    /**
-     * Test of getChamados method, of class ChamadoDAO.
-     */
-    @Test
-    public void testGetChamados() {
-        System.out.println("getChamados");
-        ChamadoDAO instance = new ChamadoDAO();
-        Collection<Chamado> expResult = null;
-        Collection<Chamado> result = instance.getChamados();
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of getRegistros method, of class ChamadoDAO.
-     */
-    @Test
-    public void testGetRegistros() {
-        System.out.println("getRegistros");
-        ChamadoDAO instance = new ChamadoDAO();
-        Collection<RegistroChamado> expResult = null;
-        Collection<RegistroChamado> result = instance.getRegistros();
+        System.out.println(result);
         assertEquals(expResult, result);
     }
     
