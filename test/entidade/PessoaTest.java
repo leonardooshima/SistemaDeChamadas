@@ -18,6 +18,30 @@ import static org.junit.Assert.*;
  */
 public class PessoaTest {
     
+    @Test
+    public void criarUmaPessoaTest(){
+        Pessoa p = new Pessoa("Meu nome", 123456789);
+        assertEquals("Meu nome", p.getNome());
+        assertEquals(123456789, p.getTelefone());
+    }
+    
+    @Test
+    public void criarUmaPessoaComTelefoneNegativoTest(){
+        Pessoa p = new Pessoa ("Meu nome", -123456789);
+        assertTrue(p.getTelefone() > 0);
+    }
+    
+    @Test
+    public void criarUmaPessoaComTelefoneInvalidoTest(){
+        Pessoa p = new Pessoa("Meu nome", 12345);
+        assertTrue(p.getTelefone()>0);
+    }
+    
+    @Test
+    public void criarUmaPessoaComTelefoneNegativoComExcecaoTest(){
+        Pessoa p = new Pessoa("Meu nome", -123456789);
+    }
+    
     public PessoaTest() {
     }
     
