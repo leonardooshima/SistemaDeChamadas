@@ -40,26 +40,6 @@ public class EmpresaDAOTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of put method, of class EmpresaDAO.
-     */
-    @Test
-    public void testPut() {
-        System.out.println("put");
-        Empresa ep = null;
-        EmpresaDAO instance = new EmpresaDAO();
-        instance.put(ep);
-    }
-
-    /**
-     * Test of persit method, of class EmpresaDAO.
-     */
-    @Test
-    public void testPersit() {
-        System.out.println("persit");
-        EmpresaDAO instance = new EmpresaDAO();
-        instance.persit();
-    }
 
     /**
      * Test of getEmpresas method, of class EmpresaDAO.

@@ -63,16 +63,6 @@ public class TecnicoDAOTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of put method, of class TecnicoDAO.
-     */
-    @Test
-    public void testPut() {
-        System.out.println("put");
-        Tecnico tecnico = null;
-        TecnicoDAO instance = new TecnicoDAO();
-        instance.put(tecnico);
-    }
 
     /**
      * Test of get method, of class TecnicoDAO.
@@ -85,16 +75,6 @@ public class TecnicoDAOTest {
         Tecnico expResult = null;
         Tecnico result = instance.get(codigo);
         assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of persit method, of class TecnicoDAO.
-     */
-    @Test
-    public void testPersit() {
-        System.out.println("persit");
-        TecnicoDAO instance = new TecnicoDAO();
-        instance.persit();
     }
     
 }
